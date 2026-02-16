@@ -1,4 +1,4 @@
-# Computational Psycholinguistics — Assignment 3
+# Computational Psycholinguistics: Assignment 3
 
 This repo contains my **report**, **analysis script**, and **generated outputs** for Assignment 3 on Word Processing and Frequency Ordered Bin Search (FOBS).
 
