@@ -1,0 +1,13 @@
+model,term,coef
+content_freq,Intercept,362.1497700307518
+content_freq,neg_log_freq,2.4847607643224303
+content_freq,word_len,3.510818252881506
+content_gpt3,Intercept,310.9170890829844
+content_gpt3,gpt3_surprisal_filled,0.8949295009317059
+content_gpt3,word_len,5.101312732958861
+function_freq,Intercept,405.4569735096748
+function_freq,neg_log_freq,3.665247275336609
+function_freq,word_len,1.7140643956466046
+function_gpt3,Intercept,317.3488215608251
+function_gpt3,gpt3_surprisal_filled,1.5473146124617168
+function_gpt3,word_len,4.572943825583931

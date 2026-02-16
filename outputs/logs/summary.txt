@@ -1,0 +1,38 @@
+=== PART I: Correlations ===
+r(length, log freq)  = -0.693729, p=0.000e+00
+r(length, mean RT)   = 0.232792, p=2.951e-126
+r(log freq, mean RT) = -0.224874, p=9.999e-118
+
+=== PART II: Hypothesis 1 (Regression comparison) ===
+Model A: mean_RT ~ -log(freq) + word_len
+  AdjR2=0.061753, AIC=105142.67
+Model B: mean_RT ~ GPT3_surprisal + word_len
+  AdjR2=0.058313, AIC=105180.20
+
+=== PART II: Hypothesis 2 (Content vs Function) ===
+Content tokens:  5882
+Function tokens: 4374
+Content models:
+  freq AdjR2=0.082196, AIC=60986.84
+  gpt3 AdjR2=0.068617, AIC=61073.23
+Function models:
+  freq AdjR2=0.048024, AIC=43853.91
+  gpt3 AdjR2=0.031753, AIC=43928.04
+
+=== PART III: Hypothesis 1 (Surface vs Lemma frequency) ===
+Surface: mean_RT ~ -log(surface_freq) + word_len
+  AdjR2=0.061753, AIC=105142.67
+Lemma:   mean_RT ~ -log(lemma_freq) + lemma_len
+  AdjR2=0.058613, AIC=105176.93
+
+=== PART III: Hypothesis 2 (Pseudo vs Real affix) ===
+Matched pairs saved to: C:\Users\dell\Downloads\S26\CP\A3\Word-Processing\outputs\tables\partIII_H2_matched_pairs.csv
+Welch t-test (pseudo vs real): t=-0.568623, p=5.790e-01
+
+Regression: mean_RT ~ is_pseudo + -log(freq) + word_len
+is_pseudo coef=-11.265244, p=6.119e-01
+
+=== WHERE TO LOOK ===
+Plots:  C:\Users\dell\Downloads\S26\CP\A3\Word-Processing\outputs\plots
+Tables: C:\Users\dell\Downloads\S26\CP\A3\Word-Processing\outputs\tables
+All plots PDF: C:\Users\dell\Downloads\S26\CP\A3\Word-Processing\outputs\all_plots.pdf
